@@ -113,25 +113,6 @@
         </div>
     </div>
 
-    <div class="beneficios bg-dark mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center text-light beneficios">
-                    <h3>Tus <span>Terminos</span></h3>
-                    <p class="m-0">Contrata el servicio que necesites</p>
-                </div>
-                <div class="col-md-4 text-center text-light beneficios">
-                    <h3>Tus <span>Tiempos</span></h3>
-                    <p class="m-0">Contrata el servicio que necesites</p>
-                </div>
-                <div class="col-md-4 text-center text-light beneficios">
-                    <h3>Tu <span>Seguridad</span></h3>
-                    <p class="m-0">Contrata el servicio que necesites</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <footer class="footer bg-light " id="hola">
         <div class="container-fluid">
             <div class="widget py-5">
@@ -200,6 +181,11 @@
     <script type="text/javascript">
         $('document').ready(function () {
             let data = []
+            let fecha = []
+            let humedad = []
+            let temperatura = []
+
+            //grafica de magnitud
             var speedCanvas = document.getElementById("speedChart");
             var lineChart = new Chart(speedCanvas, {
                 type: 'line',
@@ -215,16 +201,35 @@
                     }
                 }
             });
+            //grafica de temeratura y humedad
+
+            var speedCanvas = document.getElementById("tiempo");
+
+            Chart.defaults.global.defaultFontFamily = "Lato";
+            Chart.defaults.global.defaultFontSize = 18;
+
+          
 
             setInterval(function () {
                 getRealData()
-            }, 1000); //request every x seconds
+            }, 2000); //request every x seconds
 
 
             cargarRegistros = function (registros) {
+                data = []
+                fecha = []
+                humedad = []
+                 temperatura = []
                 for (var i = 0; i < registros.items.length; i++) {
                     data.push(parseFloat(registros.items[i]['magnitud']));
+                    fecha.push(registros.items[i]['fecha']);
+                    humedad.push(parseInt(registros.items[i]['humedad']));
+                    temperatura.push(parseInt(registros.items[i]['temperatura']));
                 }
+                data.reverse();
+                fecha.reverse();
+             humedad.reverse();
+             temperatura.reverse();
                 console.log(data);
             };
 
@@ -250,27 +255,20 @@
             function draw() {
                 Chart.defaults.global.defaultFontFamily = "Lato";
                 Chart.defaults.global.defaultFontSize = 18;
-                
-                if(data.length >= 100)
-                    data = data.splice(90,)
 
-                lineChart.data.labels = ["10-10-01 15:30", ...data]
+                // if(fecha.length >= 100)
+                //     fecha = fecha.splice(90,)
+
+                lineChart.data.labels = [...fecha]
                 lineChart.data.datasets = [{
                     label: "monitoring system",
                     data: [...data],
                 }]
-                lineChart.update();
-            }
 
 
-            var speedCanvas = document.getElementById("tiempo");
-
-            Chart.defaults.global.defaultFontFamily = "Lato";
-            Chart.defaults.global.defaultFontSize = 18;
-
-            var dataFirst = {
-                label: "Car A - Speed (mph)",
-                data: [0, 10, 11, 5, 7, 3, 10],
+                  var dataFirst = {
+                label: "Humedad",
+                data: [...humedad],
                 lineTension: 0.3,
                 fill: false,
                 borderColor: 'red',
@@ -285,8 +283,8 @@
             };
 
             var dataSecond = {
-                label: "Car B - Speed (mph)",
-                data: [20, 15, 60, 60, 65, 30, 70],
+                label: "Temperatura",
+                data: [...temperatura],
                 lineTension: 0.3,
                 fill: false,
                 borderColor: 'purple',
@@ -299,8 +297,8 @@
                 pointBorderWidth: 2
             };
 
-            var speedData = {
-                labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+                var speedData = {
+                labels: [...fecha],
                 datasets: [dataFirst, dataSecond]
             };
 
@@ -320,6 +318,11 @@
                 data: speedData,
                 options: chartOptions
             });
+            lineChart2.update();
+                lineChart.update();
+            }
+
+            
         });
     </script>
 </body>
