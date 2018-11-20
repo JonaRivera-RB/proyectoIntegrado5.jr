@@ -89,102 +89,82 @@
         </div>
     </header>
     <!--finaliza header-->
+    <section class="primeros-pasos container mt-5">
 
-    <section class="categoria mt-5">
-        <h2 class="text-center">Our services</h2>
-        <div class="container fluid mt-5">
-            <div class="row">
-                <div class="col-6 col-md-3 text-center categorias">
-                    <img src="img/icono_dg.png" alt="fluid">
-                    <h3>UX/UI design</h3>
-                    <p>Engaging customer experiences through innovative and beautiful digital products.</p>
+        <div class="row">
+            <div class="col-6 col-md-6 text-center py-5 ">
+                <h3>SERVICES</h3>
+                <div class="nav flex-column">
+                    <br>
+                    <p>UX/UI design.</p>
+                    <p>Web development.</p>
+                    <p>Mobile development.</p>
+                    <p>Embed Systems.</p>
                 </div>
-                <div class="col-6 col-md-3 text-center categorias">
-                    <img src="img/icono_dev.png" alt="fluid">
-                    <h3>Web development</h3>
-                    <p>Effective and attractive web apps developed using cutting-edge technologies and techniques.</p>
+            </div>
+            <div class="col-6 col-md-6 text-center py-5 ">
+                <h3>DEVELOPMENT</h3>
+                <div class="nav flex-column">
+                    <br>
+                    <p>Agile and Lean Methodologies.</p>
+                    <p>Real Time Applications.</p>
+                    <p>Machine Learningn.</p>
+                    <p>
+                        Security and Scalability.</p>
                 </div>
-                <div class="col-6 col-md-3 text-center categorias">
-                    <img src="img/icono_dev.png" alt="fluid">
-                    <h3>Mobile development</h3>
-                    <p>High-performance mobile apps that connect brands with customers.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-6 text-center py-5 ">
+                <h3>TECHNOLOGY</h3>
+                <div class="nav flex-column">
+                    <br>
+                    <p>Responsive Web.</p>
+                    <p>Mobile Backend.</p>
+                    <p>Data Visualization.</p>
+                    <p>Identity Design.</p>
                 </div>
-                <div class="col-6 col-md-3 text-center categorias">
-                    <img src="img/icono_mkt.png" alt="fluid">
-                    <h3>Embed Systems</h3>
-                    <p>Engaging customer experiences through innovative and beautiful digital products.</p>
+            </div>
+            <div class="col-6 col-md-6 text-center py-5 ">
+                <h3>STRATEGY</h3>
+                <div class="nav flex-column">
+                    <br>
+                    <p>Agile and Lean Methodologies.</p>
+                    <p>Real Time Applications.</p>
+                    <p>Machine Learningn.</p>
+                    <p>
+                        Security and Scalability.</p>
                 </div>
             </div>
         </div>
     </section>
-
     <div class="nuevo-pro bg-dark pb-5 pb-md-0">
         <div class="container">
             <div class="row align-item-center text-align-center py-5 text-md-left">
-                <div class="col-md-6 text-light">
-                    <h2>The new Earthquake monitoring system is here!</h2>
-                    <p>Highly tested. Hight level. Consigue el tuyo ahora mismo.</p>
-                    <a href="#" class="btn btn-outline-light">See more</a>
+                <div class="col-md-8 text-light">
+                    <h2>Why partner with Pineapple?</h2>
+                    <h5>Fast and high performing web applications
+                        Cost-effective solutions for your business growth.</h5>
+                    <br>
+                    <p>
+                        -Previous experience, industry knowledge, and passion for innovation combined to obtain proven
+                        results.
+                        <br> -The ability to work closely with a dedicated team.
+                        <br> -A team working onsite in the US and/or remotely.
+                        <br> -The flexibility to work in a convenient time zone..</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <img src="img/fvr_pro.png" alt="img-fluid">
                 </div>
             </div>
         </div>
     </div>
 
-    <section class="primeros-pasos container mt-5">
-        <h2 class="text-center">Why partner with us?</h2>
-        <p class="text-center">We have been improving our processes over the years to build world-class products that
-            offer the best nearshore experience.</p>
-        <div class="row ">
-            <div class="col-6 col-md-4 text-center py-5 colores">
-                <img src="img/team.png" alt="fluid">
-                <p>Staffing your team with talented engineers at reasonable rates.</p>
-            </div>
-            <div class="col-6 col-md-4 text-center py-5 colores">
-                <img src="img/team.png" alt="fluid">
-                <p>Taking projects from inception all the way to production.</p>
-            </div>
-            <div class="col-6 col-md-4 text-center py-5 colores">
-                <img src="img/team.png" alt="fluid">
-                <p>A fraction of your investment is destined towards developing talent.</p>
-            </div>
-            <div class="col-6 col-md-4 text-center py-5 colores">
-                <img src="img/team.png" alt="fluid">
-                <p>Following our own process or embracing yours.</p>
-            </div>
-            <div class="col-6 col-md-4 text-center py-5 colores">
-                <img src="img/team.png" alt="fluid">
-                <p>Most of our staff works on CST.</p>
-            </div>
-            <div class="col-6 col-md-4 text-center py-5 colores">
-                <img src="img/team.png" alt="fluid">
-                <p>Overnight onsite availability.</p>
-            </div>
-        </div>
-    </section>
 
-    <div class="beneficios bg-dark mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center text-light beneficios">
-                    <h3>Tus <span>Terminos</span></h3>
-                    <p class="m-0">Contrata el servicio que necesites</p>
-                </div>
-                <div class="col-md-4 text-center text-light beneficios">
-                    <h3>Tus <span>Tiempos</span></h3>
-                    <p class="m-0">Contrata el servicio que necesites</p>
-                </div>
-                <div class="col-md-4 text-center text-light beneficios">
-                    <h3>Tu <span>Seguridad</span></h3>
-                    <p class="m-0">Contrata el servicio que necesites</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="testimoniales py-5">
+    <div class=" py-5">
+        <h2 class="text-center">Our technologies</h2>
         <div class="container">
             <div id="testimoniales" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -195,28 +175,14 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row align-items-center">
-                            <div class="col-md-5 pl-5 pt-4 pt-md-0">
-                                <h4>Gran servicio</h4>
-                                <blockquote>"Un servicio muy profesional, rapido a un excelente costo"</blockquote>
-                                <p>Andres andres </p>
+                            <div class="col-md-4">
+                                <img src="img/1.png" class="d-block" alt="Testimonio 1">
                             </div>
-                            <div class="col-md-7">
-                                <img src="img/servicio1.png" class="d-block" alt="Testimonio 1">
+                            <div class="col-md-4">
+                                <img src="img/2.png" class="d-block" alt="Testimonio 1">
                             </div>
-                        </div>
-                        <!--row-->
-                    </div>
-                    <!--carousel, item-->
-
-                    <div class="carousel-item ">
-                        <div class="row align-items-center">
-                            <div class="col-md-5 pl-5 pt-4 pt-md-0">
-                                <h4>Gran servicio</h4>
-                                <blockquote>"Un servicio muy profesional, rapido a un excelente costo"</blockquote>
-                                <p>Andres andres </p>
-                            </div>
-                            <div class="col-md-7">
-                                <img src="img/slide1.png" class="d-block" alt="Testimonio 1">
+                            <div class="col-md-4">
+                                <img src="img/3.png" class="d-block" alt="Testimonio 1">
                             </div>
                         </div>
                         <!--row-->
@@ -225,13 +191,30 @@
 
                     <div class="carousel-item ">
                         <div class="row align-items-center">
-                            <div class="col-md-5 pl-5 pt-4 pt-md-0">
-                                <h4>Gran servicio</h4>
-                                <blockquote>"Un servicio muy profesional, rapido a un excelente costo"</blockquote>
-                                <p>Andres andres </p>
+                            <div class="col-md-4">
+                                <img src="img/4.png" class="d-block" alt="Testimonio 1">
                             </div>
-                            <div class="col-md-7">
-                                <img src="img/slide1.png" class="d-block" alt="Testimonio 1">
+                            <div class="col-md-4">
+                                <img src="img/5.png" class="d-block" alt="Testimonio 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/6.png" class="d-block" alt="Testimonio 1">
+                            </div>
+                        </div>
+                        <!--row-->
+                    </div>
+                    <!--carousel, item-->
+
+                    <div class="carousel-item ">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <img src="img/7.png" class="d-block" alt="Testimonio 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/8.png" class="d-block" alt="Testimonio 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/9.png" class="d-block" alt="Testimonio 1">
                             </div>
                         </div>
                         <!--row-->
@@ -298,6 +281,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+
 </body>
 
 </html>

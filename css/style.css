@@ -148,3 +148,19 @@ h1,h2,h3{
         flex: 0 0 calc(20% - 1rem);
     }
 }
+
+.items img{
+    max-width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+.items{
+    transition: all .5s ease-in-out;
+}
+.items:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.items:hover img{
+    filter: grayscale(0);
+} 
